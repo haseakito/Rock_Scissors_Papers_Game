@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Our-First-Android-Application</string>
+    <string name="Hello">welcome to our first application</string>
+    <string name="button_to_game">START</string>
+    <string name="game_text">The solo game has started!!</string>
+    <string name="game_text_2">Rock, Scissors, Paper;</string>
+    <string name="game_text_3">1...2...3....</string>
+    <string name="game_text_4">Choose one of these options</string>
+    <string name="back">back</string>
+    <string name="result_draw">Draw!</string>
+    <string name="result_win">You won!</string>
+    <string name="result_lose">You lost!</string>
+    <string name="computer_hand">Hand by computer</string>
+    <string name="my_hand">Hand by the player</string>
+    <string name="button_to_description">Description</string>
+    <string name="button_to_back">Back</string>
+    <string name="button_to_another_game">Restart</string>
 </resources>
