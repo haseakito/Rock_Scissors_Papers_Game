@@ -24,11 +24,15 @@ public class SoloGameResult extends AppCompatActivity implements View.OnClickLis
 
         setContentView(R.layout.solo_game_result);
 
+        // extract the additional information added in the SoloGame.java
+        // this id tells what button was pushed by the player
         int id = getIntent().getIntExtra("MY_HAND", 0);
+
 
         ImageView myHandImage = findViewById(R.id.myHandImage);
         int myHand = 0;
 
+        // based on the player's choice, decide on which pictures or images to display
         switch (id) {
             case R.id.rock:
                 myHandImage.setImageResource(R.drawable.rock);

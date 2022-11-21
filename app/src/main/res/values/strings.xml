@@ -15,4 +15,6 @@
     <string name="button_to_description">Description</string>
     <string name="button_to_back">Back</string>
     <string name="button_to_another_game">Restart</string>
+    <string name="player_hand">Your Hand</string>
+    <string name="cmp_hand">CPU\'s Hand</string>
 </resources>

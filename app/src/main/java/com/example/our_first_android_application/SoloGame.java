@@ -30,7 +30,10 @@ public class SoloGame extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(this, SoloGameResult.class);
+
+        // put additional information to the Intent
         intent.putExtra("MY_HAND", view.getId());
+
         startActivity(intent);
     }
 }

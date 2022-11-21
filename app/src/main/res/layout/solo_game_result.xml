@@ -23,13 +23,15 @@
         android:id="@+id/myHandImage"
         android:layout_width="217dp"
         android:layout_height="192dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
         android:contentDescription="@string/my_hand"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toTopOf="@+id/solo_game_result"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856"
         app:srcCompat="@drawable/rock" />
 
     <ImageView
@@ -41,25 +43,23 @@
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myHandImage"
-        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintVertical_bias="0.118"
         app:srcCompat="@drawable/rock" />
 
     <TextView
         android:id="@+id/solo_game_result"
         android:layout_width="218dp"
         android:layout_height="37dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="50dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/computerHandImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myHandImage" />
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Button_to_another_game"
@@ -74,4 +74,36 @@
         app:layout_constraintStart_toEndOf="@+id/Button_to_menu"
         app:layout_constraintTop_toBottomOf="@+id/computerHandImage"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/player_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="275dp"
+        android:text="@string/player_hand"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/cmp_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="267dp"
+        android:text="@string/cmp_hand"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 </androidx.constraintlayout.widget.ConstraintLayout>
